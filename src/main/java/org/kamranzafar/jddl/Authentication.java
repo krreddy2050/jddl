@@ -24,15 +24,15 @@ public class Authentication {
 
 	private AuthType authType = AuthType.BASIC;
 	private String username;
-	private String password;
+	private String password1;
 
 	public Authentication() {
 	}
 
-	public Authentication(String username, String password) {
+	public Authentication(String username, String password1) {
 		super();
 		this.username = username;
-		this.password = password;
+		this.password1 = password1;
 	}
 
 	public AuthType getAuthType() {
@@ -51,11 +51,11 @@ public class Authentication {
 		this.username = username;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getPassword1() {
+		return password1;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPassword(String password1) {
+		this.password1 = password1;
 	}
 }
